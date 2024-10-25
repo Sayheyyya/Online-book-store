@@ -1,0 +1,106 @@
+/* Cart Styles */
+.cart-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.cart-container .container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.cart-container table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.cart-container table th, 
+.cart-container table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-container table th {
+    background-color: #f0f0f0;
+}
+
+.cart-container table td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cart-container td input.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+.cart-container td button.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container td button.remove-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Cart Total */
+.cart-container .cart-total {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cart-container .cart-total h3 {
+    display: inline-block;
+}
+
+/* Centered Purchase Button */
+.cart-container .purchase-btn {
+    display: block;
+    width: 30%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #ce0a3b;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container .purchase-btn:hover {
+    background-color: #a80930;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .cart-container .container {
+        width: 95%;
+    }
+
+    .cart-container table th, 
+    .cart-container table td {
+        padding: 10px;
+    }
+
+    .cart-container .purchase-btn {
+        font-size: 16px;
+        width: 50%;
+    }
+}

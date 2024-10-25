@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> LoreLoom | Bookresale </title>
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- CSS Header and Footer -->
+		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/footer.css">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
+		<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/cube-portfolio/css/cubeportfolio.min.css">
+		<link rel="stylesheet" href="assets/plugins/cube-portfolio/custom/custom-cubeportfolio.css">
+
+		<!-- CSS Customization -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+        <link rel="stylesheet" href="assets/css/fcart.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+		<div class="wrapper">
+		<!--=== Header v1 ===-->
+		<div class="header-v1">
+		<!-- Topbar -->
+		<div class="topbar-v1">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+			<ul class="list-inline top-v1-contacts">
+			<li>
+			<i class="fa fa-envelope"></i> Email: loreloom@gmail.com
+			</li>
+			<li>
+			<i class="fa fa-phone"></i> Contact no : 88666 00555
+			</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+
+			<!-- End Topbar -->
+
+				<!-- Navbar -->
+				<div class="navbar mega-menu" role="navigation">
+				<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="res-container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-brand">
+				<a href="index.html">
+				<img src="E:\Online-book-store\assets\img\logo\L1.jpg" alt="Logo">
+				</a>
+				</div>
+				</div><!--/end responsive container-->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="res-container">
+				<ul class="nav navbar-nav">
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+				<!-- Home  -->
+				<li class="mega-menu-fullwidth">
+				<a href="index.html" >
+				HOME
+				</a>
+
+				</li>
+				<!-- End Home-->
+
+				<!-- About Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="about.html" >
+				ABOUT US
+				</a>	
+				</li>
+				<!-- End About us -->
+
+				<!-- D -->
+				<li class="mega-menu-fullwidth">
+				<a href="books.html" >
+				BOOKS
+				</a>
+				</li>
+				<!-- End D -->
+	
+	
+				<!-- Blog -->
+				<li class="mega-menu-fullwidth">
+				<a href="blog.html" >
+				BLOGS
+				</a>	
+				</li>
+				<!-- End Blog -->
+	
+				<!-- Contact Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="contact.html" >
+				CONTACT US
+				</a>	
+				</li>
+				<!-- End Contact us -->
+	
+				<!-- Registration -->
+				<li class="mega-menu-fullwidth">
+				<a href="registration.html" >
+				REGISTRATION
+				</a>	
+				</li>
+				<!-- End registration -->
+
+				<!-- login -->
+				<li class="mega-menu-fullwidth">
+				<a href="login.html" >
+				LOGIN
+				</a>	
+				</li>
+				<!-- End login -->
+
+				<!-- A -->
+				<li class="mega-menu-fullwidth">
+				<a href="prebooking.html">
+				PRE-BOOKING
+				</a>
+
+				</li>
+				<!-- End A -->
+
+				<li class="nav-item cart">
+					<a href="cart.html">
+						<i class="fa-solid fa-cart-shopping"></i> <!-- Cart Icon -->
+					</a>
+				</li>
+
+				</ul>
+	
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<!-- End Navbar -->
+
+				<!-- Image title -->
+
+				<div style="text-align: center; margin-top: 50px;">
+				<h2>CART</h2>
+				</div>
+				<!-- End title  -->
+                <!-- Cart Container -->
+				<div class="cart-container">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Total</th>
+								<th></th> <!-- For the remove button -->
+							</tr>
+						</thead>
+						<tbody id="cart-items">
+							<!-- Items will be dynamically inserted here -->
+						</tbody>
+					</table>
+
+					<div class="cart-total">
+						<h3>Total: Rs <span id="cart-total">0.00</span></h3>
+					</div>
+
+					<button class="purchase-btn">Purchase</button>
+				</div>
+        
+
+
+
+
+
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<a href="index.html"><img id="logo-footer" class="footer-logo" src="E:\Online-book-store\assets\img\logo\L1.jpg" alt=""></a>
+		<p>At LoreLoom, we take pride in offering a wide range of books across various categories. Whether you're a fan of award-winning novels, looking for bestsellers, or seeking new arrivals, we've got something for every reader.</p>
+		<p>Explore our collections and find the perfect book to dive into today!</p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+		<!-- Latest -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<div class="posts">
+		<div class="headline"><h2>Latest Posts</h2></div>
+		<ul class="list-unstyled latest-list">
+		<li>
+		<a href="blog.html">Incredible content</a>
+		<small>October 20,2024</small>
+		</li>
+		<li>
+		<a href="books.html">Latest books</a>
+		<small>October 20,2024</small>
+		</li>
+		<li>
+		<a href="terms.html">Terms and Conditions</a>
+		<small>October 20,2024</small>
+		</li>
+		</ul>
+		</div>
+		</div><!--/col-md-3-->
+		<!-- End Latest -->
+
+		<!-- Link List -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<div class="headline"><h2>Useful Links</h2></div>
+		<ul class="list-unstyled link-list">
+		<li><a href="about.html">About us</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="Contact.html">Contact us</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="prebooking.html">Pre-Booking</a><i class="fa fa-angle-right"></i></li>
+		</ul>
+		</div><!--/col-md-3-->
+		<!-- End Link List -->
+
+		<!-- Address -->
+		<div class="col-md-3 map-img " style="margin-bottom: 40px;">
+		<div class="headline"><h2>Contact Us</h2></div>
+		<address class="" style="margin-bottom: 40px;">
+		LoreLoom <br />
+		Ahmedabad, IN <br />
+		Phone: 886 666 00555 <br />
+		Email: loreloom@gmail.com 
+		</address>
+		</div><!--/col-md-3-->
+		<!-- End Address -->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+		<p>
+		2024 &copy; All Rights Reserved.
+		<a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+		</p>
+		</div>
+		</div>
+		</div>
+		</div><!--/copyright-->
+		</div>
+		<!--=== End Footer ===-->
+</div><!--/wrapper-->	
+
+
+	<!-- Scripts and JS -->
+	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="assets/plugins/cube-portfolio/js/jquery.cubeportfolio.min.js"></script>
+
+	<script type="text/javascript" src="assets/plugins/cube-portfolio/js/cube-portfolio-3.js"></script>
+	<!-- end scripts and js -->
+
+
+
+    <script>
+        // Load cart items from localStorage
+        // Load cart items from localStorage
+		function loadCart() {
+			const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+			const cartTable = document.getElementById('cart-items');
+			let total = 0;
+
+			cartTable.innerHTML = ''; // Clear the table first
+
+			// Loop through the cart items and render them in the table
+			cartItems.forEach((item, index) => {
+				const row = document.createElement('tr');
+				row.innerHTML = `
+					<td>
+						img src="images/books/${item.image}" alt="${item.name}"> ${item.name}
+					</td>
+					<td>Rs ${item.price.toFixed(2)}</td>
+					<td>
+						<input type="number" value="${item.quantity}" min="1" class="quantity-input" data-index="${index}">
+					</td>
+					<td>Rs ${(item.price * item.quantity).toFixed(2)}</td>
+					<td><button class="remove-btn" data-index="${index}">Remove</button></td>
+				`;
+				cartTable.appendChild(row);
+
+				total += item.price * item.quantity;
+			});
+
+			// Update total
+			document.getElementById('cart-total').innerText = total.toFixed(2);
+		}
+
+		// Function to update quantity
+		document.getElementById('cart-items').addEventListener('input', function (e) {
+			if (e.target.classList.contains('quantity-input')) {
+				const index = e.target.getAttribute('data-index');
+				const quantity = parseInt(e.target.value);
+				let cartItems = JSON.parse(localStorage.getItem('cart'));
+
+				// Validation to prevent zero or negative quantities
+				if (quantity < 1) {
+					alert('Quantity cannot be less than 1');
+					e.target.value = 1;
+					return;
+				}
+
+				cartItems[index].quantity = quantity;
+				localStorage.setItem('cart', JSON.stringify(cartItems));
+				loadCart(); // Reload to update total
+			}
+		});
+
+		// Remove item from cart
+		document.getElementById('cart-items').addEventListener('click', function (e) {
+			if (e.target.classList.contains('remove-btn')) {
+				const index = e.target.getAttribute('data-index');
+				let cartItems = JSON.parse(localStorage.getItem('cart'));
+
+				cartItems.splice(index, 1); // Remove the item
+				localStorage.setItem('cart', JSON.stringify(cartItems));
+				loadCart(); // Reload to update the cart
+			}
+		});
+
+		// Purchase button action
+		document.querySelector('.purchase-btn').addEventListener('click', function () {
+			alert('Purchase was successful!');
+			localStorage.removeItem('cart'); // Clear the cart after purchase
+			loadCart(); // Reload to clear items from the UI
+		});
+
+		// Load cart on page load
+		window.onload = loadCart;
+
+    </script>
+
+</body>
+</html>

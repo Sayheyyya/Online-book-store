@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> LoraLoom | Home </title>
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- CSS Header and Footer -->
+		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/footer.css">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
+		<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+
+		<!-- CSS Customization -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+	<!--=== Header v1 ===-->
+	<div class="header-v1">
+	<!-- Topbar -->
+	<div class="topbar-v1">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+			<ul class="list-inline top-v1-contacts">
+			<li>
+			<i class="fa fa-envelope"></i> Email: Loraloom@gmail.com
+			</li>
+			<li>
+			<i class="fa fa-phone"></i> Contact no : 88666 00555
+			</li>
+			</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!-- End Topbar -->
+
+				<!-- Navbar -->
+				<div class="navbar mega-menu" role="navigation">
+				<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="res-container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-brand">
+				<a href="index.html">
+				<img src="assets/img/logo/L1.jpg" alt="Logo">
+				</a>
+				</div>
+				</div><!--/end responsive container-->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="res-container">
+				<ul class="nav navbar-nav">
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+				<!-- Home  -->
+				<li class="mega-menu-fullwidth">
+				<a href="index.html" >
+				HOME
+				</a>
+
+				</li>
+				<!-- End Home-->
+
+				<!-- About Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="about.html" >
+				ABOUT US
+				</a>	
+				</li>
+				<!-- End About us -->
+
+				<!-- D -->
+				<li class="mega-menu-fullwidth">
+				<a href="books.html" >
+				BOOKS
+				</a>
+				</li>
+				<!-- End D -->
+	
+				<!-- Blog -->
+				<li class="mega-menu-fullwidth">
+				<a href="blog.html" >
+				BLOGS
+				</a>	
+				</li>
+				<!-- End Blog -->
+	
+				<!-- Contact Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="contact.html" >
+				CONTACT US
+				</a>	
+				</li>
+				<!-- End Contact us -->
+	
+				<!-- Registration -->
+				<li class="mega-menu-fullwidth">
+				<a href="registration.html" >
+				REGISTRATION
+				</a>	
+				</li>
+				<!-- End registration -->
+
+				<!-- login -->
+				<li class="mega-menu-fullwidth">
+				<a href="login.html" >
+				LOGIN
+				</a>	
+				</li>
+				<!-- End login -->
+
+				<!-- A-->
+				<li class="mega-menu-fullwidth">
+				<a href="prebooking.html">
+				PRE-BOOKING
+				</a>
+
+				</li>
+				<!-- End A -->
+
+				<li class="nav-item cart">
+					<a href="cart.html">
+						<i class="fa-solid fa-cart-shopping"></i> <!-- Cart Icon -->
+					</a>
+				</li>
+
+				</ul>
+	
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<!-- End Navbar -->
+
+
+
+
+			<!-- Slider -->
+			<div id="slide">
+			<div class="slideshow-container">
+			<div class="mySlides fade"> <img src="assets/img/slider/file.png" alt="Slider1" style="width:100%"> </div>
+			<div class="mySlides fade"> <img src="assets/img/slider/S2.jpg" alt="Slider2" style="width:100%"> </div>
+			<div class="mySlides fade"> <img src="assets/img/slider/S3.png" alt="Slider3" style="width:100%"> </div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+			</div>
+			<br>
+			<div style="text-align:center"> 
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+			</div>
+
+			<script>
+			var slideIndex = 0;
+			showSlides();
+			var slides,dots;
+
+			function showSlides() {
+			var i;
+			slides = document.getElementsByClassName("mySlides");
+			dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex> slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 8000); // Change image every 8 seconds
+			}
+
+			function plusSlides(position) {
+			slideIndex +=position;
+			if (slideIndex> slides.length) {slideIndex = 1}
+			else if(slideIndex<1){slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			}
+
+			function currentSlide(index) {
+			if (index> slides.length) {index = 1}
+			else if(index<1){index = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[index-1].style.display = "block";  
+			dots[index-1].className += " active";
+			}
+			</script>
+
+
+			<!-- End of Slider -->
+
+		<!--=== Welcome to Unity===-->
+		<div class="container content-md welcomeSection">
+		<div class="row section1">
+			<div class="col-md-6" style="margin-bottom: 40px;">
+			<h2 class="title-v2">WELCOME TO <span style="color: #d42358;"> LoraLoom </span></h2>
+			<p style="text-align: justify; font-size: 14px;">LoraLoom is your ultimate destination for discovering and purchasing books online. With over 100,000+ titles spanning every genre imaginable, from fiction and non-fiction to fantasy, self-help, and more, we offer something for everyone.</p>
+			<p style="text-align: justify; font-size: 14px;">Our platform is designed to provide a seamless shopping experience, featuring personalized book recommendations, exclusive author interviews, and a curated selection of bestsellers and hidden gems. We’re committed to delivering high-quality service with free shipping and competitive prices.</p> 
+			<p style="text-align: justify; font-size: 14px;">At LoraLoom, we believe in fostering a passion for reading and making books easily accessible to all. Explore our diverse collection today and find your next great read!</p> <br>
+			<a href="about.html" class="btn-u btn-brd btn-brd-hover">Read More</a>
+		</div>
+		<div class="col-md-6 overflow-h">
+			<img style="border-radius: 50px; margin-left: 30px;" src="assets/img/bg/bg1.jpg" alt="">
+		</div>
+		</div>
+		</div>
+		<!--=== End About Us ===-->
+
+
+
+		<!-- Specialities -->
+		<div class="container" style="margin-top: 50px;">
+		<div class="headline-center" style="margin-bottom: 60px;">
+			<h2>Our Book Collections</h2>
+			<div class="line"></div>
+			<p>At LoreLoom, we take pride in offering a wide range of books across various categories. Whether you're a fan of award-winning novels, looking for bestsellers, or seeking new arrivals, we've got something for every reader. Explore our collections and find the perfect book to dive into today!</p>
+		</div><!--end Spciallities-->
+
+		<div class="row" style="margin-bottom: 40px;">
+			<div class="col-md-4">
+				<div class="content-boxes-v5" style="margin-bottom: 30px;">
+					<i class="fa-solid fa-bookmark" style="border-radius: 50%;"></i>
+					<div class="overflow-h">
+						<h3 class="no-top-space">Bestsellers</h3>
+						<p>Discover the most popular books that everyone is talking about. These top-selling titles are a must-read for every book lover.</p>
+					</div>
+				</div>
+				<div class="content-boxes-v5" style="margin-bottom: 30px;">
+					<i style="border-radius: 50%;" class="fa-solid fa-award"></i>
+					<div class="overflow-h">
+						<h3 class="no-top-space">Award Winners</h3>
+						<p>A curated selection of books that have won prestigious literary awards, from Pulitzer Prize winners to Booker Prize honorees.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="content-boxes-v5" style="margin-bottom: 30px;">
+					<i style="border-radius: 50%;" class="fa-solid fa-book-open"></i>
+					<div class="overflow-h">
+						<h3 class="no-top-space">Reselling Books</h3>
+						<p>Get great deals on second-hand books that are in excellent condition. Find rare gems and save big on your favorite titles.</p>
+					</div>
+				</div>
+				<div class="content-boxes-v5" style="margin-bottom: 30px;">
+					<i style="border-radius: 50%;" class="fa-solid fa-medal"></i>
+					<div class="overflow-h">
+						<h3 class="no-top-space">International Bestsellers</h3>
+						<p>Explore books that have captivated readers worldwide. These global bestsellers will broaden your perspective and enrich your reading experience.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="content-boxes-v5" style="margin-bottom: 30px;">
+					<i style="border-radius: 50%;" class="fa-solid fa-cubes"></i>
+					<div class="overflow-h">
+						<h3 class="no-top-space">New Arrivals</h3>
+						<p>Be the first to grab the latest books on the market. Keep up with the newest releases across all genres.</p>
+					</div>
+				</div>
+				<div class="content-boxes-v5" style="margin-bottom: 30px;">
+					<i style="border-radius: 50%;" class="fa-solid fa-user-astronaut"></i>
+					<div class="overflow-h">
+						<h3 class="no-top-space">Fictional Books</h3>
+						<p>Escape into a world of imagination with our vast collection of fiction, spanning from thrilling mysteries to heartwarming romances.</p>
+					</div>
+				</div>
+			</div>
+		</div><!--/end row-->
+		</div><!--/end container-->
+		<!-- End Content Part -->
+
+				<!-- Plans Start -->
+				<section class="pricingSection">
+				<div class="container" style="margin-top: 20px;">
+				<div class="headline-center">
+					<h2>Best Deals</h2>
+					<div class="line"></div>
+				<div class="row">
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">LoreLoom's</span> Basic Collection</h3>
+						</div>
+						<ul style="list-style-type:none;">
+							<li><b>Genres:</b> Fiction, Non-Fiction</li>
+							<li><b>Format:</b> eBooks</li>
+							<li>Perfect for casual readers and those looking to expand their reading list.</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+						</ul>
+						<div class="pricing-v9-price">
+							For <span class="g-color-default">₹1500/-</span>
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">LoreLoom's</span> Gold Collection</h3>
+						</div>
+						<ul style="list-style-type:none;">
+							<li><b>Genres:</b> Bestsellers, Award Winners</li>
+							<li><b>Format:</b> eBooks & Audiobooks </li>
+							<li>Dive into our collection of bestsellers and award-winning titles that everyone is talking about.</li>
+							<li>&nbsp;</li>
+						</ul>
+						<div class="pricing-v9-price">
+							For <span class="g-color-default">₹3000/-</span> 
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">LoreLoom's</span> Happy Heart Collection</h3>
+						</div>
+						<ul style="list-style-type:none;">
+							<li><b>Genres:</b> Self-Help, Wellness </li>
+							<li><b>Format:</b> eBooks & Audiobooks</li>
+							<li>Explore our engaging self-help and wellness books, along with podcasts featuring insightful discussions and author interviews.</li>
+							
+						</ul>
+						<div class="pricing-v9-price">
+							For <span class="g-color-default">₹4500/-</span> 
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">LoreLoom's</span> Platinum Collection</h3>
+						</div>
+						<ul style="list-style-type:none;">
+							<li><b>Genres:</b> All-Time Classics, New Arrivals</li>
+							<li><b>Format:</b> eBooks, Podcasts</li>
+							<li>A comprehensive collection of timeless classics and the latest arrivals. Enjoy a mix of free reads and premium selections in both eBook and podcasts.</li>
+							
+						</ul>
+						<div class="pricing-v9-price">
+							For <span class="g-color-default">₹8000/-</span> 
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				</div>
+				</div>
+				</div>
+				</section>
+				<!-- End PLANS -->
+
+
+		<!-- Blog part -->
+		<div class="container">
+		<div class="headline-center" style="margin-bottom: 40px;">
+			<h2>Recent Blogs</h2>
+			<div class="line"></div>
+		</div><!--/end Headline Center-->
+
+		<div class="container" style="margin-bottom: 50px;">
+		<div class="row news-v1">
+		<div class="col-md-4" style="margin-bottom: 40px;">
+			<div class="news-v1-in">
+				<img class="img-responsive" src="assets/img/blogs/bb1.jpg" alt="">
+				<h3><a href="blog.html">How to Choose the Perfect Book for Winter Reading?</a></h3>
+				<p>There’s nothing like curling up with a good book during the chilly winter months. Whether you enjoy thrillers, romance, or fantasy, find out how to select the perfect book that matches your mood for a cozy winter read... </p>
+				<ul class="list-inline news-v1-info">
+					<li><span>By</span> <a href="#">Emily Parker</a></li>
+					<li style="margin-left: 17px;">|</li>
+					<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> october 20, 2024</li>
+					<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Read More</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-bottom: 40px;">
+			<div class="news-v1-in">
+				<img class="img-responsive" src="assets/img/blogs/bb2N.jpg" alt="">
+				<h3><a href="blog.html">The Rise of AI in Digital Book Curation</a></h3>
+				<p>AI is revolutionizing how we discover books. With advanced algorithms, online platforms now offer personalized book recommendations tailored to individual tastes, helping readers uncover hidden gems they might have missed...</p>
+				<ul class="list-inline news-v1-info">
+					<li><span>By</span> <a href="#">Sivlis Sullivan</a></li>
+					<li style="margin-left: 17px;">|</li>
+					<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> october 20, 2024</li>
+					<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Read More</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="news-v1-in">
+				<img class="img-responsive" src="assets/img/blogs/bb3N.jpg" alt="">
+				<h3><a href="blog.html">Why Every Reader Should Keep a Reading Journal</a></h3>
+				<p>Tracking your reading progress, thoughts, and reflections in a journal can enhance your reading experience. Discover how keeping a reading journal can deepen your connection with books and boost your reading habits...</p>
+				<ul class="list-inline news-v1-info">
+					<li><span>By</span> <a href="#">Sarah Mitchell</a></li>
+					<li style="margin-left: 17px;">|</li>
+					<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> october 20, 2024</li>
+					<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Read More</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		</div>
+		<!-- End News v1 Gray -->
+		</div>
+
+
+
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 md-margin-bottom-40">
+		<a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo/L1.jpg" alt=""></a>
+		<p>At LoreLoom, we take pride in offering a wide range of books across various categories. Whether you're a fan of award-winning novels, looking for bestsellers, or seeking new arrivals, we've got something for every reader.</p>
+		<p>Explore our collections and find the perfect book to dive into today!</p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+		<!-- Latest -->
+		<div class="col-md-3" style="margin-bottom: 40px;">
+		<div class="posts">
+		<div class="headline"><h2>Latest Posts</h2></div>
+		<ul class="list-unstyled latest-list">
+		<li>
+		<a href="blog.html">Incredible content</a>
+		<small>october 20, 2024</small>
+		</li>
+		<li>
+		<a href="books.html">Latest books</a>
+		<small>october 20, 2024</small>
+		</li>
+		<li>
+		<a href="terms.html">Terms and Conditions</a>
+		<small>october 20, 2024</small>
+		</li>
+		</ul>
+		</div>
+		</div><!--/col-md-3-->
+		<!-- End Latest -->
+
+		<!-- Link List -->
+		<div class="col-md-3" style="margin-bottom: 40px;">
+		<div class="headline"><h2>Useful Links</h2></div>
+		<ul class="list-unstyled link-list">
+		<li><a href="about.html">About us</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="Contact.html">Contact us</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="prebooking.html">Shipping</a><i class="fa fa-angle-right"></i></li>
+		</ul>
+		</div><!--/col-md-3-->
+		<!-- End Link List -->
+
+		<!-- Address -->
+		<div class="col-md-3 map-img" style="margin-bottom: 40px;">
+		<div class="headline"><h2>Contact Us</h2></div>
+		<address class="md-margin-bottom-40">
+		LoreLoom <br />
+		Ahmedabad, IN <br />
+		Phone: 886 666 00555 <br />
+		Email: Loreloom@gmail.com 
+		</address>
+		</div><!--/col-md-3-->
+		<!-- End Address -->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+		<p>
+		2024 &copy; All Rights Reserved.
+		<a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+		</p>
+		</div>
+		</div>
+		</div>
+		</div><!--/copyright-->
+		</div>
+		<!--=== End Footer ===-->
+</div><!--/wrapper-->
+
+</body>
+</html>
+

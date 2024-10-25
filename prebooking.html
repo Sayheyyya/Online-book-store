@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title> LoreLoom | PRE-BOOKING </title>
+
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- CSS Header and Footer -->
+		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/footer.css">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
+		<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+		<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+		<!-- CSS Customization -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+	<!--=== Header v1 ===-->
+	<div class="header-v1">
+	<!-- Topbar -->
+	<div class="topbar-v1">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+		<ul class="list-inline top-v1-contacts">
+		<li>
+		<i class="fa fa-envelope"></i> Email: loreloom@gmail.com
+		</li>
+		<li>
+		<i class="fa fa-phone"></i> Contact no : 88666 00555
+		</li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+
+<!-- End Topbar -->
+
+				<!-- Navbar -->
+				<div class="navbar mega-menu" role="navigation">
+				<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="res-container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-brand">
+				<a href="index.html">
+				<img src="assets/img/logo/L1.jpg" alt="Logo">
+				</a>
+				</div>
+				</div><!--/end responsive container-->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="res-container">
+				<ul class="nav navbar-nav">
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+				<!-- Home  -->
+				<li class="mega-menu-fullwidth">
+				<a href="index.html" >
+				HOME
+				</a>
+
+				</li>
+				<!-- End Home-->
+
+				<!-- About Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="about.html" >
+				ABOUT US
+				</a>	
+				</li>
+				<!-- End About us -->
+
+				<!-- D -->
+				<li class="mega-menu-fullwidth">
+				<a href="books.html" >
+				BOOKS
+				</a>
+	            </li>
+				<!-- End D -->
+
+				<!-- Blog -->
+				<li class="mega-menu-fullwidth">
+				<a href="blog.html" >
+				BLOGS
+				</a>	
+				</li>
+				<!-- End Blog -->
+	
+				<!-- Contact Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="contact.html" >
+				CONTACT US
+				</a>	
+				</li>
+				<!-- End Contact us -->
+	
+				<!-- Registration -->
+				<li class="mega-menu-fullwidth">
+				<a href="registration.html" >
+				REGISTRATION
+				</a>	
+				</li>
+				<!-- End registration -->
+
+				<!-- login -->
+				<li class="mega-menu-fullwidth">
+				<a href="login.html" >
+				LOGIN
+				</a>	
+				</li>
+				<!-- End login -->
+
+				<!-- Ap -->
+				<li class="mega-menu-fullwidth">
+				<a href="prebooking.html">
+				PRE-BOOKING
+				</a>
+
+				</li>
+				<!-- End A -->
+
+				<li class="nav-item cart">
+					<a href="cart.html">
+						<i class="fa-solid fa-cart-shopping"></i> <!-- Cart Icon -->
+					</a>
+				</li>
+
+				</ul>
+	
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<!-- End Navbar -->
+
+
+
+	<!--=== Heading ===-->
+	<div class="container content">
+	<div class="row " style="margin-bottom: 30px;">
+	<div class="col-md-9 " style="margin-bottom: 30px;">
+	<div class="headline"><h2>Pre-Booking Form</h2></div>
+
+				<!--===  FORM ===-->
+				<form onsubmit="showMsg(0);return false;" method="post" class="sky-form sky-changes-3">
+					<fieldset>
+						<div class="row">
+							<section class="col col-6">
+								<label class="label">Name</label>
+								<label class="input">
+									<i class="icon-append fa fa-user"></i>
+									<input type="text" name="name" id="name" placeholder="Enter your name" required="">
+								</label>
+							</section>
+							<section class="col col-6">
+								<label class="label">E-mail</label>
+								<label class="input">
+									<i class="icon-append fa fa-envelope-o"></i>
+									<input type="email" name="email" id="email" placeholder="Enter your email address" required="">
+								</label>
+							</section>
+						</div>
+			
+						<section>
+							<label class="label">Book Title</label>
+							<label class="input">
+								<i class="icon-append fa fa-book"></i>
+								<input type="text" name="book_title" placeholder="Enter the title of the book you wish to pre-book" required="">
+							</label>
+						</section>
+			
+						<section>
+							<label class="label">Author Name</label>
+							<label class="input">
+								<i class="icon-append fa fa-pencil"></i>
+								<input type="text" name="author_name" placeholder="Enter the author's name (if known)">
+							</label>
+						</section>
+			
+						<section>
+							<label class="label">Mobile Number</label>
+							<label class="input">
+								<i class="icon-append fa fa-phone"></i>
+								<input type="text" name="number" id="number" placeholder="Enter your mobile number" required="">
+							</label>
+						</section>
+			
+						<section>
+							<label class="label">Select Genre</label>
+							<label class="select">
+								<select name="genre" required="">
+									<option value="" selected="" disabled="">Choose the genre of the book</option>
+									<option>Fiction</option>
+									<option>Non-Fiction</option>
+									<option>Fantasy</option>
+									<option>Science Fiction</option>
+									<option>Mystery</option>
+									<option>Biography</option>
+									<option>Romance</option>
+									<option>History</option>
+								</select>
+								<i></i>
+							</label>
+						</section>
+			
+						<section>
+							<label class="label">Address</label>
+							<label class="input">
+								<i class="icon-append fa fa-map-marker"></i>
+								<input type="text" name="address" placeholder="Enter your address">
+							</label>
+						</section>
+			
+						<section>
+							<label class="label">Additional Notes</label>
+							<label class="textarea">
+								<textarea rows="3" name="additional_notes" placeholder="Any additional notes or requests"></textarea>
+							</label>
+						</section>
+			
+						<div class="alert alert-success successBox">
+							<button type="button" class="close" onclick="showMsg(1);">×</button>
+							<span class="alert-link"> Your book pre-booking request has been submitted successfully.</span>
+						</div>
+					</fieldset>
+			
+					<footer>
+						<button type="submit" class="btn-u">Send message</button>
+					</footer>
+				</form>
+			</div>
+			
+			
+			
+
+				<!-- side part of a -->
+						<div class="col-md-3" style="margin-top: 56px;">
+						<!-- Address -->
+						<div class="headline"><h2>Booking Notes</h2></div>
+						<p> You can pre-book hard copies of your favorite books before they are officially released.</p>
+						<p> You will receive a notification once the book is available for pickup or delivery.</p>
+
+						<!-- Business Hours -->
+						<div class="headline" style="margin-top: 20px;"><h2>Business Hours</h2></div>
+						<ul class="list-unstyled " style="margin-bottom: 30px;">
+						<li><strong>Available for pre-bookings 24/7.</strong> </li>
+						</ul>
+
+						<!-- Why choose us? -->
+						<div class="headline"><h2>Why Pre-Book With Us?</h2></div>
+						<p>All your favorite books, authors, and genres can be accessed in one place, making LoraLoom your go-to destination for all your reading needs. Enjoy a seamless pre-booking experience that ensures you get your hands on the latest titles before anyone else!</p>
+						<ul class="list-unstyled">
+						<li> Ensure you get your copy on release day.</li>
+						<li> Exclusive offers for pre-booked titles.</li>
+						<li> Easy and convenient process for securing your favorite reads.</li>
+						</ul>
+						</div><!--/col-md-3-->
+						</div><!--/row-->
+						</div><!--/container--> 
+
+
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo/L1.jpg" alt=""></a>
+		<p>At LoreLoom, we take pride in offering a wide range of books across various categories. Whether you're a fan of award-winning novels, looking for bestsellers, or seeking new arrivals, we've got something for every reader.</p>
+		<p>Explore our collections and find the perfect book to dive into today!</p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+		<!-- Latest -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<div class="posts">
+		<div class="headline"><h2>Latest Posts</h2></div>
+		<ul class="list-unstyled latest-list">
+		<li>
+		<a href="blog.html">Incredible content</a>
+		<small>October 20,2024</small>
+		</li>
+		<li>
+		<a href="bookresale.html">Latest Images</a>
+		<small>October 20,2024</small>
+		</li>
+		<li>
+		<a href="terms.html">Terms and Conditions</a>
+		<small>October 20,2024</small>
+		</li>
+		</ul>
+		</div>
+		</div><!--/col-md-3-->
+		<!-- End Latest -->
+
+		<!-- Link List -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<div class="headline"><h2>Useful Links</h2></div>
+		<ul class="list-unstyled link-list">
+		<li><a href="about.html">About us</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="Contact.html">Contact us</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="prebooking.html">Pre-Booking</a><i class="fa fa-angle-right"></i></li>
+		</ul>
+		</div><!--/col-md-3-->
+		<!-- End Link List -->
+
+		<!-- Address -->
+		<div class="col-md-3 map-img " style="margin-bottom: 40px;">
+		<div class="headline"><h2>Contact Us</h2></div>
+		<address class="" style="margin-bottom: 40px;">
+		LoreLoom <br />
+		Ahmedabad, IN <br />
+		Phone: 886 666 00555 <br />
+		Email: loreloom@gmail.com 
+		</address>
+		</div><!--/col-md-3-->
+		<!-- End Address -->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+		<p>
+		2024 &copy; All Rights Reserved.
+		<a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+		</p>
+		</div>
+
+		
+		</div>
+		</div>
+		</div><!--/copyright-->
+		</div>
+		<!--=== End Footer ===-->
+</div><!--/wrapper-->
+
+	<!-- Java scripts -->
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+    // Function to show or hide the message box
+    // Add an event listener to the pre-book button
+    document.querySelector('.btn-u').addEventListener('click', function() {
+        alert('Your book pre-booking request has been submitted successfully!'); // Show alert on click
+        showMsg(0); // Show success message
+    });
+</script>
+
+</body>
+</html>
